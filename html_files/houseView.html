@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/stylesAll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+  </style>
+<body>
+    <div class="container">
+        <div class="hiddenAdditional" style=" display: none;" id="invisID">
+
+            <div class="additionalHeading">ADDITIONAL INFORMATION</div>
+            <a href="#" id="closeButton" onclick="closeDiv()" class="closeButton">X</a>
+            <div class="infoBox">
+                <div class="mainInfoBox">
+                    <div class="label">AREA SIZE:</div>
+                    <div class="information">3000</div>
+                </div>
+                <div class="mainInfoBox">
+                    <div class="label">LAND AREA:</div>
+                    <div class="information">3000</div>
+                </div>
+                <div class="mainInfoBox">
+                    <div class="label">ROOMS: </div>
+                    <div class="information">43</div>
+                </div>
+                <div class="mainInfoBox">
+                    <div class="label">BEDROOMS: </div>
+                    <div class="information">12</div>
+                </div>
+                <div class="mainInfoBox">
+                    <div class="label">BATHROOMS: </div>
+                    <div class="information">12</div>
+                </div>
+                <div class="mainInfoBox">
+                    <div class="label">PROPERTY TYPE: </div>
+                    <div class="information">FAMILY HOME</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="hiddenContact" style=" display: none;" id="invisID2">
+
+            <div class="additionalHeading">CONTACT SELLER</div>
+            <div class="infoBox2">
+                <div class="takHz">
+                    <div class="hzHeading">PHONE NUMBER</div>
+                    <div class="hzText">22098292</div>
+                </div>
+                <div class="takHz">
+                    <div class="hzHeading">EMAIL</div>
+                    <div class="hzText">MARTINSSTILIGS@GMAIL.COM</div>
+                </div>
+                <div class="takHz">
+                    <div class="hzHeading">FULL NAME</div>
+                    <div class="hzText">MARTINS LACIS</div>
+                </div>
+            </div>
+            <a href="#" id="closeButton2" onclick="closeDiv2()" class="closeButton">X</a>
+          
+
+        </div>
+
+        <div class="menuButton">+</div>
+        <div class="menuBar"></div>
+
+
+        <div class="topHeading">
+            <div class="mainHeadingTextBox">
+                <img src="/assets/image-removebg-preview.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="midContainer">
+
+            <div class="leftContainer">
+
+                <section class="imageBox swiper mySwiper" >
+                    <div class="wrapper swiper-wrapper">
+                        <div class="slide">
+                            <img src="/assets/image1.jpg" alt="" class="image">
+                        </div>
+                        
+                    </div>
+                    
+                </section>
+                <div class="underImg">
+                    <a href="" class="smallImageBox"></a>
+                    <a href="" class="smallImageBox"></a>
+                    <a href="" class="smallImageBox"></a>
+                    <a href="" class="smallImageBox"></a>
+                    <a href="" class="smallImageBox"></a>
+                    
+                </div>
+
+            </div>
+
+            <div class="rightContainer">
+                <div class="box">
+
+
+                    <div class="boxHeading">MEGA MANSION FORTNITE</div>
+                    <div class="descriptionBox">
+                        <div class="descTextBox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni omnis sit dicta exercitationem mollitia id! Accusamus incidunt, quo illo facere at, a assumenda saepe autem qui corrupti sint quae eligendi?</div>
+                    </div>
+                    <div class="aboutBox">
+                        <div class="singleBox">
+                            <div class="aboutNameHead">FULL NAME:</div>
+                            <div class="aboutName">JENATOLIJS IVANOVS</div>
+                        </div>
+                        <div class="singleBox">
+                            <div class="aboutNameHead">PRICE:</div>
+                            <div class="aboutName">13 000 000 $</div>
+                        </div>
+                        <div class="singleBox">
+                            <div class="aboutNameHead">AVAILABLE VISIT:</div>
+                            <div class="aboutName">YES</div>
+                        </div>
+                    </div>
+
+                    <div class="buttonBox">
+                        <button class="button" id="additionalButton" onclick="openDiv()">ADDITIONAL INFO</button>
+                        <button class="button" onclick="openDiv2()">CONTACT SELLER</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function closeDiv(){
+            document.getElementById('invisID').style.display='none';
+        }
+        function openDiv(){
+            document.getElementById('invisID').style.display='flex';
+        }
+        function closeDiv2(){
+            document.getElementById('invisID2').style.display='none';
+        }
+        function openDiv2(){
+            document.getElementById('invisID2').style.display='flex';
+        }
+    </script>
+</body>
+</html>
